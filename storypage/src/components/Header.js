@@ -1,3 +1,10 @@
+/**
+ * Chloe Becker
+ * DIG 4639c
+ * 1-31-2025
+ * Storypage app
+ */
+
 import React from 'react';
 
 const Header = () => {
