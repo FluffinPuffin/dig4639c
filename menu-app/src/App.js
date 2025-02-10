@@ -63,8 +63,9 @@ let menuData = [
 const App = () => {
   return (
     <div className="App">
-      <MenuApp data={menuData[0]} />
-      <MenuApp data={menuData[1]} />
+      {menuData.map((menu, index) => (
+        <MenuApp key={index} data={menu} />
+      ))}
     </div>
   );
 };
