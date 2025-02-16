@@ -16,7 +16,7 @@ function RepetitionExercise({ name }) {
 
     // Display this to screen
     return (
-        <div class="repetition">
+        <div>
             <h2>{name}</h2>
             <div>Count: {count}</div>
             <button onClick={handleIncrement}>Increase</button>

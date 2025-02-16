@@ -41,9 +41,9 @@ function DurationExercise({ name }) {
 
     // display to screen
     return (
-        <div>
+        <div class="duration">
             <h2>{name}</h2>
-            <div>Timer: {formatTime(timer)}</div>
+            <div class="timer">Timer: {formatTime(timer)}</div>
             <button onClick={start}>Start</button>
             <button onClick={reset}>Reset</button>
         </div>
