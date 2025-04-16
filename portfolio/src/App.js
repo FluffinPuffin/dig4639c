@@ -1,18 +1,27 @@
-import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-import './App.css';
+import Home from './pages/home';
+import About from './pages/about';
+import Projects from './pages/projects';
+import Contact from './pages/contact';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <div className="home">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Hello! I'm Chloe Becker, a full-stack developer passionate about building web apps.</p>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </>
+    </Router>
   );
 }
 
