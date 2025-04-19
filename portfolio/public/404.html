@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // Store the original path before redirecting
+      sessionStorage.redirect = window.location.pathname;
+    </script>
+    <meta http-equiv="refresh" content="0;URL='/portfolio/index.html'">
+  </head>
+  <body>
+    <!-- Fallback if JavaScript is disabled -->
+    <p>Redirecting... <a href="/portfolio/index.html">Click here if not redirected</a></p>
+  </body>
+</html>
