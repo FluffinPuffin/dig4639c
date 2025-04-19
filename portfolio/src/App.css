@@ -66,8 +66,8 @@ Button/CTA: #B39CD0 (lavender)
     }
 
     /* Contact Section */
-    /* Contact Section */
     .contact {
+        animation: fadeIn 0.5s ease-out;
         min-height: 50vh;
         display: flex;
         flex-direction: column;
@@ -114,10 +114,202 @@ Button/CTA: #B39CD0 (lavender)
         transform: translateY(-3px);
     }
 
+    /* Contact Form Styles */
+    .contact-form {
+        width: 100%;
+        max-width: 500px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        background: rgba(44, 44, 44, 0.8);
+        border-radius: 10px;
+        border: 1px solid #A8DADC;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #E4E4E4;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 95%;
+        padding: 0.75rem;
+        background: #2C2C2C;
+        border: 1px solid #E4E4E4;
+        border-radius: 5px;
+        color: #E4E4E4;
+        font-family: inherit;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .submit-btn {
+        background-color: #B39CD0;
+        color: #2C2C2C;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: #A8DADC;
+        transform: translateY(-2px);
+    }
+
+    /* Keep your existing contact links styling */
+    .contact-links-container {
+        margin-top: 2rem;
+    }
+
     /* About page*/
+    .about {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        color: #E4E4E4;
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    .about h2 {
+        color: #A8DADC;
+        /* Light cyan accent */
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        position: relative;
+    }
+
+    .about h2::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 3px;
+        background: #B39CD0;
+        /* Lavender accent */
+        margin: 0.5rem auto;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    /* Highlight important text */
+    .about p:nth-of-type(2) {
+        /* "I love to build..." paragraph */
+        font-size: 1.2rem;
+        color: #FFC1CC;
+        /* Soft pink accent */
+        background: rgba(44, 44, 44, 0.7);
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-left: 4px solid #B39CD0;
+        /* Lavender accent */
+    }
+
+    /* Skills sections */
+    .about p:nth-of-type(3),
+    /* Coding experience */
+    .about p:nth-of-type(4) {
+        /* Soft skills */
+        display: inline-block;
+        background: rgba(168, 218, 220, 0.1);
+        /* Light cyan tint */
+        padding: 1rem 1.5rem;
+        border-radius: 30px;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Hobbies section */
+    .about p:last-of-type {
+        font-style: italic;
+        color: #A8DADC;
+        /* Light cyan */
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     /* Home page*/
+    .home {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        color: #E4E4E4;
+        animation: fadeIn 0.5s ease-out;
+    }
+
+    .home h2 {
+        color: #A8DADC;
+        /* Light cyan accent */
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        position: relative;
+    }
+
+    .home h2::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 3px;
+        background: #B39CD0;
+        /* Lavender accent */
+        margin: 1rem auto;
+    }
+
+    .home p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        background: rgba(44, 44, 44, 0.7);
+        border-radius: 8px;
+        border-left: 4px solid #FFC1CC;
+        /* Soft pink accent */
+    }
+
+    /* Animation - Same as About page */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
     /* Projects page*/
     .projects {
+        animation: fadeIn 0.5s ease-out;
         text-align: center;
         min-height: calc(100vh - 10em);
         padding: 2rem;
@@ -194,6 +386,18 @@ Button/CTA: #B39CD0 (lavender)
         top: 4rem;
         /* Position below title */
         margin-top: 0;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
 
